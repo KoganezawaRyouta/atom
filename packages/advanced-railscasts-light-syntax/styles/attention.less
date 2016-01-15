@@ -1,0 +1,27 @@
+@import "syntax-variables";
+
+.pulsate(@color, @name) {
+// Creates pulsing text for warnings and errors
+  @-webkit-keyframes @name {
+    from {
+      background-color: @color;
+      color: @syntax-background-color;
+    }
+
+    to {
+      background-color: @syntax-background-color;
+      color: @color;
+    }
+  }
+}
+
+.pulsate(yellow, pulsate-warning);
+.pulsate(red, pulsate-error);
+
+.warning-animation {
+  -webkit-animation: pulsate-warning 1s infinite alternate;
+}
+
+.error-animation {
+  -webkit-animation: pulsate-error 1s infinite alternate;
+}

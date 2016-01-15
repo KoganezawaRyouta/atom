@@ -1,0 +1,317 @@
+@import "attention";
+@import "colors";
+@import "syntax-variables";
+
+:host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+:host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @syntax-text-color;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor::shadow {
+  .find-result .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+
+  .current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
+}
+
+.comment {
+  color: @comment-color;
+}
+
+.constant {
+  color: @constant-decl-color;
+
+  &.character.escape {
+    color: @literal-escaped-color;
+  }
+
+  &.numeric {
+    color: @literal-color;
+  }
+
+  &.other.color {
+    color: @base0D;
+  }
+
+  &.other.symbol {
+    color: @symbol-color;
+  }
+}
+
+.entity {
+  &.name.class, &.name.type.class {
+    color: @type-color;
+  }
+
+  &.name.function {
+    color: @function-color;
+  }
+
+  &.name.section {
+    color: @base0D;
+  }
+
+  &.name.tag {
+    color: @base08;
+  }
+
+  &.name.type {
+    color: @name-color;
+  }
+
+  &.other.attribute-name {
+    color: @base09;
+
+    &.id {
+      color: @base0D;
+    }
+  }
+
+  &.other.inherited-class {
+    color: @type-color;
+  }
+}
+
+.invalid.deprecated {
+  .warning-animation;
+}
+
+.invalid.illegal {
+  .error-animation;
+}
+
+.keyword {
+  color: @keyword-color;
+
+  &.control {
+    color: @keyword-color;
+  }
+
+  &.operator {
+    color: @operator-color;
+  }
+
+  &.other.special-method {
+    color: @keyword-color;
+  }
+
+  &.other.unit {
+    color: @base0A;
+  }
+}
+
+.meta {
+  &.class {
+    color: @base0A;
+  }
+
+  &.link {
+    color: @base0A;
+  }
+
+  &.require {
+    color: @base0D;
+  }
+
+  &.selector {
+    color: @base0E;
+  }
+
+  &.separator {
+    background-color: @base04;
+    color: @syntax-text-color;
+  }
+}
+
+.markup {
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @syntax-color-modified;
+  }
+
+  &.deleted {
+    color: @syntax-color-removed;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.heading {
+    color: @base0F;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @base0D;
+  }
+
+  &.inserted {
+    color: @syntax-color-added;
+  }
+
+  &.list {
+    color: @base08;
+  }
+
+  &.quote {
+    color: @base0A;
+  }
+
+  &.raw {
+    color: @base0C;
+  }
+}
+
+.none {
+  color: @syntax-text-color;
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @comment-color;
+    }
+
+    &.string,
+    &.variable,
+    &.parameters,
+    &.array {
+      color: @syntax-text-color;
+    }
+
+    &.heading,
+    &.identity {
+      color: @base0D;
+    }
+
+    &.string {
+      color: @literal-color;
+    }
+
+    &.bold {
+      color: @base0A;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @base0E;
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: @base0F;
+  }
+}
+
+.storage {
+  color: @base0E;
+}
+
+.string {
+  color: @literal-color;
+
+  &.regexp {
+    color: @literal-color;
+
+    .source.ruby.embedded {
+      color: @base0A;
+    }
+  }
+
+  &.other.link {
+    color: @base08;
+  }
+}
+
+.variable {
+  color: @variable-color;
+
+  &.interpolation {
+    color: @base09;
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
+  }
+}
+
+.support {
+  &.class {
+    color: @base0A;
+  }
+
+  &.function  {
+    color: @function-color;
+
+    &.any-method {
+      color: @base0D;
+    }
+  }
+
+  &.type {
+    color: @type-color;
+  }
+}
+
+:host(.mini) .scroll-view {
+  padding-left: 1px;
+}

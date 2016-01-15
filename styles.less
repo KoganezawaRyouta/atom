@@ -1,0 +1,62 @@
+body, html {
+  // 全体のフォントの設定
+  font-family: 'Ricty';
+}
+
+@font-face {
+  font-family: mplus;
+  src: url('/Users/ryoutakoganezawa/.atom/mplus-TESTFLIGHT-059/mplus-1p-regular.ttf');
+}
+
+.tree-view {
+  ol.entries.list-tree li {
+    // ファイルツリーのフォントサイズが大きすぎるので変更
+    font-size: 9pt;
+
+    span.icon:before {
+      // フォルダ・ファイルアイコンは8ptだとつぶれるので 10pt に
+      font-size: 10pt;
+    }
+  }
+  font-family: "Meiryo";
+}
+
+.vertical {
+  // パネルを分割するとアクティブになっているパネルがわかりにくいので、非アクティブのパネルは透過
+  .pane {
+    opacity:0.40;
+
+    &.active {
+      opacity: 1.0;
+    }
+  }
+
+  // パネルの境界がわかりにくいのでborderの色を変更
+  .panes .pane-row > *,
+  .panes .pane-column > * {
+    border-right: 1px solid rgba(150, 150, 150, 0.2);
+  }
+}
+
+.editor {
+  .line.cursor-line {
+    background: #1F2224;
+  }
+  .selection .region{
+       background-color: yellow;
+       opacity: 0.3;
+    }
+  .cursor {
+  }
+}
+
+atom-text-editor, atom-text-editor::shadow {
+  .highlight.ideographic-space {
+    .region:after {
+      color: #800000;
+      content: '×';
+      background-color: #CCCCCC;
+    }
+  }
+}
+

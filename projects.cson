@@ -1,0 +1,19 @@
+test_atom:
+  title: "test_atom"
+  paths: [
+    "/Users/ryoutakoganezawa/workspace/bm_dev_chef"
+  ]
+bm_on_rails:
+  title: "bm_on_rails"
+  paths: [
+    "/Users/ryoutakoganezawa/workspace/bm_dev_chef/nfs_sync_dir/bm_on_rails"
+    "/Users/ryoutakoganezawa/workspace/bm_dev_chef/nfs_sync_dir/php_apps"
+    "/Users/ryoutakoganezawa/workspace/bm_dev_chef/nfs_sync_dir/performance"
+  ]
+color_size_projects:
+  title: "color_size_projects"
+  paths: [
+    "/Users/ryoutakoganezawa/workspace/bm_dev_chef/nfs_sync_dir/bm_on_rails"
+    "/Users/ryoutakoganezawa/workspace/buyma_global_chef/nfs_sync_dir/buyma_global"
+    "/Users/ryoutakoganezawa/workspace/01_task/01_global"
+  ]

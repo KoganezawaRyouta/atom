@@ -1,0 +1,72 @@
+"*":
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    zoomFontWhenCtrlScrolling: true
+    softWrap: true
+    showIndentGuide: true
+    showInvisibles: true
+    fontSize: 13
+  core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    themes: [
+      "isotope-ui"
+      "atom-material-syntax"
+    ]
+  "atom-beautify":
+    _analyticsUserId: "a3de28e3-9187-4cbf-90a8-06a0093b399b"
+  "exception-reporting":
+    userId: "5b1fd50d-32a7-a85f-60c1-8740b81e7619"
+  welcome:
+    showOnStartup: false
+  "save-session":
+    dataSaveFolder: "/Users/ryoutakoganezawa/.atom/packages/save-session/projects"
+    project: "/Users/ryoutakoganezawa/workspace/bm_dev_chef/nfs_sync_dir/bm_on_rails"
+    windowX: 0
+    windowY: 22
+    windowWidth: 1882
+    windowHeight: 874
+    fullScreen: false
+    projects: [
+      "/Users/ryoutakoganezawa/workspace/bm_dev_chef/nfs_sync_dir/bm_on_rails"
+    ]
+  "tree-view": {}
+  "atom-beautifier": {}
+  "highlight-line":
+    enableSelectionBorder: true
+  "show-ideographic-space": {}
+  minimap:
+    plugins:
+      "git-diff": true
+      bookmarks: true
+      selection: true
+      "highlight-selected": true
+      "find-and-replace": true
+    absoluteMode: true
+  linter:
+    ignoredLinterErrors: [
+      "ruby"
+      "rubocop"
+    ]
+    subtleLinterErrors: [
+      "gjslint"
+    ]
+  toolbar:
+    visible: false
+  "tool-bar": {}
+  "highlight-selected": {}
+  "linter-ruby":
+    rubyExecutablePath: "/Users/ryoutakoganezawa/.rbenv/versions/2.1.4/bin/ruby"
+  "linter-rubocop":
+    command: "/Users/ryoutakoganezawa/.rbenv/versions/2.1.6/bin/rubocop"
+  "linter-less": {}
+  "fuzzy-finder-plus": {}
+  "linter-jshint":
+    executablePath: "/usr/local/bin/jshint"
+    lintInlineJavaScript: false
+    disableWhenNoJshintrcFileInPath: false
+  "go-plus":
+    goPath: "/Users/ryoutakoganezawa/workspace/03_privateProject/centoos7-docker-golang/nfs_sync_dir/go/mygo"
+    goInstallation: "/usr/local/bin/go"
